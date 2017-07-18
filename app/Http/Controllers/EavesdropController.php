@@ -25,6 +25,7 @@ class EavesdropController extends Controller
         $record = new Record($content["vars"]);
         $record->ip = request()->ip();
         $record->session_id = $content["id"];
+        $record->consequences = $content["consequences"];
         $record->save();
         foreach ($content["history"] as $hstep) {
             $step_index = $hstep[0];
@@ -43,7 +44,7 @@ class EavesdropController extends Controller
     }
     public function greet(){
 
-  
+
         return ;
     }
 }

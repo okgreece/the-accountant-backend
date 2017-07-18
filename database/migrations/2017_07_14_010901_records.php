@@ -19,6 +19,7 @@ class Records extends Migration
             $table->string('session_id');
             $table->timestamps();
             $table->double('expenditures');
+            $table->string('consequences');
             $table->double('personal_account');
             $table->double('reserves');
             $table->double('resources');

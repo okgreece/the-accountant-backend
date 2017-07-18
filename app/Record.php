@@ -42,6 +42,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Record whereUpdatedAt($value)
  * @property string $session_id
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Record whereSessionId($value)
+ * @property string $consequences
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Record whereConsequences($value)
  */
 class Record extends Model
 {
