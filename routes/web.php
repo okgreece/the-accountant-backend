@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 Route::get('eavesdrop', 'EavesdropController@greet');
 Route::post('eavesdrop', 'EavesdropController@listen');
+
+Route::get('analytics', 'AnalyticsController@index');

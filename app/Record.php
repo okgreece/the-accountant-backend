@@ -52,5 +52,14 @@ class Record extends Model
     public function steps(){
         return $this->hasMany("App\Step");
     }
+    
+    public function played_steps(){
+        return $this->hasMany("App\PlayedStep");
+    }
+    
+    public function last_step(){
+        $last_step = $this->played_steps();
+        return $last_step;
+    }
 
 }
